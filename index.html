@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoBazar</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- fonst awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__novigation">
+          <a class="location" href="#"
+            ><img
+              src="./image/icons/location-icon.svg"
+              alt="location icon"
+            />Store Location: Lincoln- 344, Illinois, Chicago, USA</a
+          >
+
+          <div class="">
+            <select name="" id="">
+              <option value="eng">Eng</option>
+              <option value="Uz">Uz</option>
+              <option value="Ru">Ru</option>
+            </select>
+            <select name="" id="">
+              <option value="USD">USD</option>
+              <option value="UZS">UZS</option>
+              <option value="RUBL">RUBL</option>
+            </select>
+            <a class="sign" href="#">Sign In</a>
+            <a class="sign" href="#">Sign Up</a>
+          </div>
+        </div>
+
+        <div class="midle">
+          <a href="./index.html"
+            ><img src="./image/svg/Logo.svg" alt="ecobazar logo"
+          /></a>
+
+          <div class="input">
+            <img src="./image/icons/Search.svg" alt="" />
+            <input type="text" placeholder="Search" />
+            <button>Search</button>
+          </div>
+
+          <div>
+            <img src="./image/icons/Heart.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+        <nav class="sitenav">
+        <div class="container sitenav__container">
+          <ul class="sitenav__list">
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Home</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Shop</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Pages</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Blog</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">About Us</a></li>
+            <li class="sitenav__item"><a class="sitenav__link" href="#">Contact Us</a></li>
+          </ul>
+
+          <a class="callMe" href="#"><img src="./image/icons/tel.svg" alt=""> (219) 555-0114</a>
+        </div>
+        </nav>
+
+        <section class="hero">
+          <div class="container hero__container">
+            <p class="hero__text">Best Deals</p>
+            <h1 class="hero__title">Sale of the Month</h1>
+            <div class="timer">
+              <p>
+                <span class="days">00</span>
+                DAYS
+              </p>
+              <span>:</span>
+             
+             
+              <p>
+                <span class="days">00</span>
+                HOURS
+              </p>
+              <span>:</span>
+              <p>
+                <span class="minut">00</span>
+               MINS
+              </p>
+              <span>:</span>
+              <p>
+                <span class="seconds">00</span>
+               SEC
+              </p>
+             
+            </div>
+
+            <button class="hero__btn btn">Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="protsent">
+              <p>56%</p>
+              <span>OFF</span>
+            </div>
+          </div>
+
+          
+
+        </section>
+      
+    </header>
+
+    <!-- main -->
+    <main class="main">
+     <section class="cards">
+      <div class="container cards__container">
+        <div onclick="showModal()" class="card"> 
+          <img src="./image/png/chili-red.png" alt="chili red">
+          <div class="card__intro">
+            <p class="card-name">Red Chili</p>
+            <p class="product__price">
+            $14.99
+            </p>
+
+            <img src="./image/svg/Rating.svg" alt="rating">
+            <span class="bag-shopping">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M6.66667 8.83333H4.16667L2.5 18H17.5L15.8333 8.83333H13.3333M6.66667 8.83333V6.33333C6.66667 4.49239 8.15905 3 10 3V3C11.8409 3 13.3333 4.49238 13.3333 6.33333V8.83333M6.66667 8.83333H13.3333M6.66667 8.83333V11.3333M13.3333 8.83333V11.3333" stroke="#1A1A1A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </span>
+          </div>
+        </div> 
+      
+
+        <!-- <div class="next-card">
+          <span><i class="fa-solid fa-chevron-left"></i></span>
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>...</span>
+          <span>7</span>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+        </div>
+      </div> -->
+     </section>
+
+     <div class="modal__wrapper hidden ">
+      <div class="modal">
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="left__imgs">
+          <i class="fa-solid fa-chevron-up"></i>
+          <img src="./image/png/cabbage.png" alt="product img" class="img1">
+          <img src="./image/modal-image/slider-cabagge2.png" alt="product img" class="img4">
+          <img src="./image/modal-image/slider-cabagge3.png" alt="product img" class="img3">
+          <img src="./image/modal-image/slider-cabagge4.png" alt="product img" class="img2">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <img class="modal-image" src="./image/png/cabbage.png" alt="main modal image">
+
+       <div class="modal__intro-wrapper">
+        <div class="modal__intro">
+          <h2 class="modal__title">Chinese Cabbage <span>In Stock</span></h2>
+          <div class="rating__wrap"><img src="./image/modal-image/Rating.png" alt=""> <b>SKU: <span>2,51,594</span></b></div>
+          <div class="product__price">
+            <span>$48.00</span>
+            <h2 class="price">$17.28</h2>
+            <p class="price__skidka">64% off</p>
+          </div>
+        </div>
+
+        <!-- modal description -->
+
+        <div class="modal__desc">
+          <div class="modal__desc-top">
+            <h3>Brand</h3>
+          <img src="./image/modal-image/product__modal.png" alt="">
+
+          <div class="socials">
+           <h4>Share item:</h4>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          </div>
+          <p class="modal__desc-text">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+            per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, 
+            ultrices et ipsum. Nulla varius magna a consequat pulvinar. 
+          </p>
+        </div>
+
+        <!-- mdoal btns -->
+
+        <div class="modal__btns">
+          <div class="modal__count">
+            <button>-</button>
+            <p>5</p>
+            <button>+</button>
+          </div>
+
+          <button class="add__btn">Add to Cart <i class="fa-solid fa-bag-shopping"></i></button>
+
+          <span class="heart__wrap"><i class="fa-regular fa-heart"></i></span>
+        </div>
+
+        <div class="category">
+          <h2>Category:
+            <p>Vegetables</p>
+          </h2>
+          <p>Tag:
+            Vegetables
+            Healthy
+            Chinese
+            Cabbage
+            Green Cabbage</p>
+        </div>
+       </div>
+       </div>
+     </div>
+
+     <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__texts">
+          <h4 class="contact__title">
+            Subcribe our Newsletter
+          </h4>
+          <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+        </div>
+
+        <div class="contact__input">
+          <input type="text" placeholder="Your email address">
+          <button class="contact__btn">Subscribe</button>
+        </div>
+
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#">
+            <i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      
+      </div>
+     </section>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer-desc">
+          <a href="./index.html"><img src="./image/svg/footer-logo.svg" alt="logo"></a>
+          <p class="footer-desc-text">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+          <a href="#">(219) 555-0114
+            or
+            Proxy@gmail.com</a>
+        </div>
+
+        <ul class="account">
+          <li><h5>My Account</h5></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">Shoping Cart</a></li>
+          <li><a href="#">Wishlist</a></li>
+        </ul>
+        <ul class="help">
+          <li><h5>Helps</h5></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Faqs</a></li>
+          <li><a href="">Terms & Condition</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+        <ul class="proxsy">
+          <li><h5>Proxy</h5></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Track Order</a></li>
+        </ul>
+        <ul class="Categories">
+          <li><h5>Categories</h5></li>
+          <li><a href="#">Fruit & Vegetables</a></li>
+          <li><a href="#">Meat & Fish</a></li>
+          <li><a href="#">Bread & Bakery</a></li>
+          <li><a href="#">Beauty & Health</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+  <script src="./js/app.js"></script>
+</html>
